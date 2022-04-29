@@ -1,0 +1,113 @@
+.Welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 955px) {
+    .Welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Welcome-text {
+        text-align: center;
+    }
+
+    .Welcome-container-left {
+        margin-bottom: 2.5em;
+    }
+
+    img.Welcome-aside-img {
+        height: 320px;
+    }
+}
+
+.Welcome-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Welcome-container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media screen and (max-width: 495px) {
+    .Welcome-container-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Welcome-btn {
+        margin: 5px 0;
+    }
+}
+
+.Welcome-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 2px solid var(--secondary-color);
+    outline: 0;
+    border-radius: 6px;
+    padding: 0.2em 1em;
+    cursor: pointer;
+}
+
+#Welcome-btn-signIn {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.Welcome-container-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.Welcome-aside-img {
+    height: 520px;
+}
+
+@media screen and (max-width: 614px) {
+    img.Welcome-aside-img {
+        height: 220px;
+    }
+
+    .Welcome-container-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    img.Welcome-aside-img {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    img.Welcome-aside-img {
+        display: none;
+    }
+}
+
+.Welcome-text {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.Welcome-text span {
+    color: var(--secondary-color);
+}
