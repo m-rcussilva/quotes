@@ -63,11 +63,6 @@
     cursor: pointer;
 }
 
-#Welcome-btn-signIn {
-    background-color: transparent;
-    color: var(--secondary-color);
-}
-
 .Welcome-container-right {
     display: flex;
     align-items: center;
@@ -87,7 +82,7 @@
     .Welcome-container-btn {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
