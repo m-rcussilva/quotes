@@ -1,0 +1,18 @@
+.FeedContainer {
+    background-color: lightslategray;
+    padding: 1em;
+    width: 720px;
+    max-width: 722px;
+}
+
+.FeedContainer-textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 0.5em 1em;
+}
+
+.FeedContainer-btn {
+    float: right;
+    cursor: pointer;
+}

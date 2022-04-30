@@ -1,0 +1,22 @@
+.Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 4em;
+    background-color: #eee;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.Nav-links-container {
+    display: flex;
+    gap: 25px;
+}
+
+.Nav-link {
+    text-decoration: none;
+}

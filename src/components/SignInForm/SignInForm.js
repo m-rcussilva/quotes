@@ -20,7 +20,7 @@ const SignInForm = ({ toggleModal }) => {
 
                 <button
                     className="SignInForm-close-modal"
-                    onClick={toggleModal}
+                    onClick={() => toggleModal(false)}
                 >
                     X
                 </button>

@@ -6,10 +6,6 @@ import "./Welcome.css";
 const Welcome = () => {
     const [modal, setModal] = useState(false);
 
-    const toggleModal = () => {
-        setModal(!modal);
-    };
-
     return (
         <>
             <div className="Welcome">
@@ -20,7 +16,10 @@ const Welcome = () => {
                     </h2>
 
                     <div className="Welcome-container-btn">
-                        <button className="Welcome-btn" onClick={toggleModal}>
+                        <button
+                            className="Welcome-btn"
+                            onClick={() => setModal(true)}
+                        >
                             Sign In
                         </button>
                     </div>
@@ -34,7 +33,7 @@ const Welcome = () => {
                     />
                 </div>
 
-                {modal && <SignInForm toggleModal={toggleModal} />}
+                {modal && <SignInForm toggleModal={setModal} />}
             </div>
         </>
     );
