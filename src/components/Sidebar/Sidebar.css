@@ -1,5 +1,5 @@
 .Sidebar {
-    background-color: lightblue;
+    background-color: var(--tertiary-color);
     width: 340px;
     max-width: 360px;
     padding: 1em;
@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 280px;
+    height: 265px;
 }
 
 .Sidebar-profile-img {

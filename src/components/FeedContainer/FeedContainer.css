@@ -1,5 +1,5 @@
 .FeedContainer {
-    background-color: lightslategray;
+    background-color: var(--tertiary-color);
     padding: 1em;
     width: 720px;
     max-width: 722px;
@@ -12,7 +12,30 @@
     padding: 0.5em 1em;
 }
 
+.FeedContainer-info-input {
+    margin-bottom: 10px;
+}
+
+.FeedContainer-ctn-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+}
+
 .FeedContainer-btn {
-    float: right;
     cursor: pointer;
+}
+
+.FeedContainer-ctn-quotes {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--secondary-color);
+    margin-bottom: 1.5em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color: #f2f9f9;
+}
+
+.FeedContainer-quotes {
+    color: #454545;
 }
