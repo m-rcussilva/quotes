@@ -3,6 +3,20 @@
     padding: 1em;
     width: 720px;
     max-width: 722px;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 765px) {
+    .FeedContainer {
+        width: 540px;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .FeedContainer {
+        width: 340px;
+    }
 }
 
 .FeedContainer-textarea {
@@ -10,6 +24,13 @@
     height: 120px;
     resize: none;
     padding: 0.5em 1em;
+    border: 2px solid var(--border-color);
+    outline: 0;
+    border-radius: 6px;
+}
+
+.FeedContainer-textarea:focus {
+    border: 2px solid var(--secondary-color);
 }
 
 .FeedContainer-info-input {
@@ -19,23 +40,26 @@
 .FeedContainer-ctn-btn {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2.5em;
+    /* margin-bottom: 2.5em; */
 }
 
 .FeedContainer-btn {
+    background-color: var(--secondary-color);
+    border: none;
+    outline: 0;
+    border-radius: 6px;
+    color: var(--primary-color);
+    padding: 0.2em 1em;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .FeedContainer-ctn-quotes {
     display: flex;
     flex-direction: column;
-    border: 4px solid var(--secondary-color);
-    margin-bottom: 1.5em;
+    border: 2px solid var(--border-color);
+    margin: 1.5em 0;
     padding: 0.5em 1em;
     border-radius: 6px;
     background-color: #f2f9f9;
-}
-
-.FeedContainer-quotes {
-    color: #454545;
 }

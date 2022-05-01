@@ -7,8 +7,7 @@ const Sidebar = () => {
             <div className="Sidebar-container">
                 <img src={ProfilePic} alt="" className="Sidebar-profile-img" />
 
-                <h3 className="Sidebar-profile-name">Nome</h3>
-                <p className="Sidebar-profile-country">País</p>
+                <h3 className="Sidebar-profile-name">Username</h3>
             </div>
         </div>
     );
