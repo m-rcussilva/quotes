@@ -1,20 +1,52 @@
+import axios from "axios";
 import { useState } from "react";
 import "./SignInForm.css";
 
 const SignInForm = ({ toggleModal }) => {
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setName("");
         setEmail("");
         setPassword("");
-        console.log({ email, password });
+        console.log({ name, email, password });
+    };
+
+    const handleClickRegister = () => {
+        axios
+            .post("http://localhost:3003/users", {
+                name,
+                email,
+                password,
+            })
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
     };
 
     return (
         <div className="SignInForm-overlay">
             <form className="SignInForm" onSubmit={handleSubmit}>
+                <div className="SignInForm-control">
+                    <label className="label" htmlFor="name">
+                        Nome
+                    </label>
+                    <input
+                        type="text"
+                        className="input"
+                        name="name"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </div>
+
                 <div className="SignInForm-control">
                     <label className="label" htmlFor="email">
                         Email
