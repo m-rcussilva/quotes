@@ -7,27 +7,24 @@ const SignInForm = ({ toggleModal }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        reset();
+        console.log({ name, email, password });
+
+        const body = {
+            name: name,
+            email: email,
+            password: password,
+        };
+
+        const response = await axios.post("http://localhost:3003/users", body);
+    };
+
+    const reset = () => {
         setName("");
         setEmail("");
         setPassword("");
-        console.log({ name, email, password });
-    };
-
-    const handleClickRegister = () => {
-        axios
-            .post("http://localhost:3003/users", {
-                name,
-                email,
-                password,
-            })
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.error(err);
-            });
     };
 
     return (
