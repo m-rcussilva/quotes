@@ -3,17 +3,15 @@ import { useState } from "react";
 import "./SignInForm.css";
 
 const SignInForm = ({ toggleModal }) => {
-    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         reset();
-        console.log({ name, email, password });
+        console.log({ email, password });
 
         const body = {
-            name: name,
             email: email,
             password: password,
         };
@@ -22,7 +20,6 @@ const SignInForm = ({ toggleModal }) => {
     };
 
     const reset = () => {
-        setName("");
         setEmail("");
         setPassword("");
     };
@@ -30,20 +27,6 @@ const SignInForm = ({ toggleModal }) => {
     return (
         <div className="SignInForm-overlay">
             <form className="SignInForm" onSubmit={handleSubmit}>
-                <div className="SignInForm-control">
-                    <label className="label" htmlFor="name">
-                        Nome
-                    </label>
-                    <input
-                        type="text"
-                        className="input"
-                        name="name"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                </div>
-
                 <div className="SignInForm-control">
                     <label className="label" htmlFor="email">
                         Email
@@ -74,7 +57,7 @@ const SignInForm = ({ toggleModal }) => {
 
                 <div className="SignInForm-container-btn">
                     <button type="submit" className="SignInForm-btn">
-                        Log In
+                        Sign In
                     </button>
                 </div>
 
