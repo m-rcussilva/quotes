@@ -1,10 +1,13 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./SignInForm.css";
 
 const SignInForm = ({ toggleModal }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -17,6 +20,10 @@ const SignInForm = ({ toggleModal }) => {
         };
 
         const response = await axios.post("http://localhost:3003/users", body);
+
+        localStorage.setItem("token", response.data.token);
+
+        navigate("/home");
     };
 
     const reset = () => {
