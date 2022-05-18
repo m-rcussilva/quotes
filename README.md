@@ -8,7 +8,7 @@ Clone down these repository. You will need `node` and `npm` installed globally o
 
 ## Back-end
 
-[https://github.com/m-rcussilva/quotes-backend](quotes-backend)
+[quotes-backend](https://github.com/m-rcussilva/quotes-backend)
 
 Installation:
 
