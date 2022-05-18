@@ -2,6 +2,7 @@ import { useState } from "react";
 import WelcomeAsideImg from "../../assets/images/welcome-aside-img.png";
 import SignInForm from "../../components/SignInForm/SignInForm";
 import "./Welcome.css";
+import "./Welcome-media-queries.css";
 
 const Welcome = () => {
     const [modal, setModal] = useState(false);

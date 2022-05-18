@@ -1,0 +1,40 @@
+@media screen and (max-width: 645px) {
+    .Welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Welcome-container-left {
+        margin-bottom: 2.5em;
+        padding: 0 4em;
+        width: 380px;
+    }
+
+    .Welcome-text {
+        text-align: center;
+    }
+
+    .Welcome-container-right {
+        width: 380px;
+    }
+
+    img.Welcome-aside-img {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Welcome-container-left {
+        width: 300px;
+    }
+
+    .Welcome-container-right {
+        width: 300px;
+    }
+
+    img.Welcome-aside-img {
+        height: 240px;
+    }
+}

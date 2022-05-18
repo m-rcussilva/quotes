@@ -1,22 +1,6 @@
 .FeedContainer {
-    background-color: var(--tertiary-color);
     padding: 1em;
-    width: 720px;
-    max-width: 722px;
     border-radius: 6px;
-}
-
-@media screen and (max-width: 765px) {
-    .FeedContainer {
-        width: 540px;
-        margin-top: 1em;
-    }
-}
-
-@media screen and (max-width: 585px) {
-    .FeedContainer {
-        width: 340px;
-    }
 }
 
 .FeedContainer-textarea {
@@ -40,7 +24,6 @@
 .FeedContainer-ctn-btn {
     display: flex;
     justify-content: flex-end;
-    /* margin-bottom: 2.5em; */
 }
 
 .FeedContainer-btn {

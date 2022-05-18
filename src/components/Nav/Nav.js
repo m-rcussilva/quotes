@@ -12,9 +12,6 @@ const Nav = () => {
                 <Link to="/profile" className="Nav-link">
                     Perfil
                 </Link>
-                <Link to="" className="Nav-link">
-                    Sair
-                </Link>
             </div>
         </nav>
     );
